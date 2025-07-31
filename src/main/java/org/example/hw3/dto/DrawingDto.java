@@ -6,7 +6,6 @@ public class DrawingDto {
     private String name;
     private List<ShapeDto> shapes;
 
-    // getters & setters
     public String getName() { return name; }
     public void setName(String name) { this.name = name; }
 

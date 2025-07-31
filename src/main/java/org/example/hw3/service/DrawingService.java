@@ -30,7 +30,6 @@ public class DrawingService {
 
         drawing.setName(dto.getName());
 
-        // map incoming DTO shapes to entity shapes
         var shapeEntities = dto.getShapes().stream().map(sd -> {
             Shape s = new Shape();
             s.setType(sd.getType());
@@ -40,7 +39,6 @@ public class DrawingService {
             return s;
         }).collect(Collectors.toList());
 
-        // replace all shapes
         drawing.setShapes(shapeEntities);
 
         repo.save(drawing);

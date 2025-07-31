@@ -1,6 +1,7 @@
 package org.example.hw3.model;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
+
 
 @Entity
 @Table(name = "shape")
@@ -17,7 +18,6 @@ public class Shape {
     @JoinColumn(name = "drawing_id")
     private Drawing drawing;
 
-    // getters & setters
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
 

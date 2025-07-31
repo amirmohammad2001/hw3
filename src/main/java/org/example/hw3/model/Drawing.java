@@ -1,6 +1,7 @@
 package org.example.hw3.model;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,7 +26,6 @@ public class Drawing {
     )
     private List<Shape> shapes = new ArrayList<>();
 
-    // getters & setters
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
 

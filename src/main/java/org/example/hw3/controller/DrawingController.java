@@ -1,13 +1,13 @@
 package org.example.hw3.controller;
 
-import com.example.hw3.dto.DrawingDto;
-import com.example.hw3.service.DrawingService;
+import org.example.hw3.dto.DrawingDto;
+import org.example.hw3.service.DrawingService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/drawings")
-@CrossOrigin(origins = "http://localhost:3000")  // adjust if needed
+@CrossOrigin(origins = "http://localhost:3000")
 public class DrawingController {
 
     private final DrawingService service;
