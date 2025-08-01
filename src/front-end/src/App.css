@@ -1,0 +1,91 @@
+.App {
+  font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 8px;
+  background: #eee;
+  align-items: center;
+}
+
+/*.DrawingName {*/
+/*  font-size: 1.2rem;*/
+/*  padding: 4px;*/
+/*}*/
+
+.HeaderButtons button {
+  margin-left: 8px;
+}
+
+.Main {
+  flex: 1;
+  display: flex;
+  position: relative;
+}
+
+.Canvas {
+  flex: 1;
+  margin: 8px;
+  border: 2px solid #999;
+  position: relative;
+  background: #fafafa;
+}
+
+.Sidebar {
+  width: 80px;
+  border-left: 2px solid #999;
+  padding: 8px;
+  background: #f0f0f0;
+}
+
+.Tool {
+  text-align: center;
+  margin-bottom: 12px;
+  padding: 4px;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.Tool.selected {
+  border-color: steelblue;
+}
+
+.BottomBar {
+  height: 40px;
+  border-top: 2px solid #999;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #eee;
+}
+
+.Count {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.Count > *:first-child {
+  margin-right: 4px;
+}
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background: #f3f3f3;
+}
+.Header-left label,
+.Header-buttons button {
+  margin-right: 8px;
+}
+.DrawingName,
+.Username {
+  margin-left: 4px;
+}
